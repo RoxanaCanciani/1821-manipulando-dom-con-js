@@ -10,8 +10,8 @@ const createTask = (evento) => {
   const value = input.value;
   const list = document.querySelector('[data-list]');
   const task = document.createElement('li');
-  task.classList.add('card');
-  input.value = '';
+  task.classList.add('card');//le agrega la clase card
+  input.value = '';//limpiar input
   //backticks
   const taskContent = document.createElement('div');
 
@@ -22,7 +22,7 @@ const createTask = (evento) => {
   taskContent.appendChild(titleTask);
   // task.innerHTML = content;
 
-  task.appendChild(taskContent);
+  task.appendChild(taskContent);//alelemento task quiero agregarle un elemento hijo
   task.appendChild(deleteIcon());
   list.appendChild(task);
 };
